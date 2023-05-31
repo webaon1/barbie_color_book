@@ -20,7 +20,9 @@
     .nav-link {
       color: #FFF;
     }
-
+    .navbar-nav {
+      margin-left: auto;
+    }
     /* App Screenshot Slider Styles */
     .carousel-item img {
       width: 100%;
@@ -56,9 +58,11 @@
     <h1>Welcome to Barbie Princess Colorbook</h1>
     <!-- Add your app's main content here -->
     <div class="row mt-4">
+      <div class="col-md-1">
+      </div>
       <div class="col-md-3">
         <div id="app-screenshots" class="carousel slide mt-4" data-bs-ride="carousel">
-          <div class="carousel-inner">
+          <div class="carousel-inner" style="border: black 5px solid; border-radius: 20px; overflow: hidden;">
             <div class="carousel-item active">
               <img src="screenshot1.jpg" alt="Screenshot 1">
             </div>
@@ -79,12 +83,14 @@
           </button>
         </div>
       </div>
-      <div class="col-md-9 d-flex align-items-center justify-content-center">
+      <div class="col-md-7 d-flex align-items-center justify-content-center">
         <div class="mt-4 text-center">
           <h2>Download the App</h2>
           <p>Scan the QR code below to download the Barbie Princess Colorbook app:</p>
           <img src="qr-code.png" alt="QR Code" class="img-fluid">
         </div>
+      </div>
+      <div class="col-md-1">
       </div>
     </div>
   </div>
